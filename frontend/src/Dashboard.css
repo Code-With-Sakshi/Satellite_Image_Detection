@@ -1,0 +1,1001 @@
+/* ==================================================
+   DASHBOARD PAGE
+================================================== */
+
+.dashboard-page {
+  min-height: 100vh;
+  width: 100%;
+  background: #ffffff;
+  color: #111111;
+}
+
+
+/* ==================================================
+   NAVBAR
+================================================== */
+
+.dashboard-navbar {
+  width: 100%;
+  height: 70px;
+  padding: 0 55px;
+  background: #ffffff;
+  border-bottom: 1px solid #e5e7eb;
+
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  box-sizing: border-box;
+}
+
+
+/* ==================================================
+   LOGO
+================================================== */
+
+.dashboard-logo-section {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+
+.dashboard-logo-section .logo-icon {
+  width: 38px;
+  height: 38px;
+
+  border-radius: 10px;
+
+  background: #e52525;
+  color: #ffffff;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  font-size: 22px;
+}
+
+
+.dashboard-logo-section .logo-text {
+  font-size: 20px;
+  font-weight: 700;
+}
+
+
+.dashboard-logo-section .logo-ai {
+  color: #e52525;
+}
+
+
+/* ==================================================
+   USER
+================================================== */
+
+.dashboard-user {
+  display: flex;
+  align-items: center;
+  gap: 18px;
+}
+
+
+.dashboard-user span {
+  color: #6b7280;
+  font-size: 14px;
+}
+
+
+.dashboard-user strong {
+  color: #111111;
+}
+
+
+/* ==================================================
+   LOGOUT
+================================================== */
+
+.logout-btn {
+  height: 38px;
+  padding: 0 20px;
+
+  border: none;
+  border-radius: 20px;
+
+  background: #111827;
+  color: white;
+
+  font-size: 14px;
+  font-weight: 600;
+
+  cursor: pointer;
+}
+
+
+.logout-btn:hover {
+  background: #e52525;
+}
+
+
+/* ==================================================
+   MAIN CONTAINER
+================================================== */
+
+.dashboard-container {
+  width: 100%;
+  max-width: 1250px;
+
+  margin: 0 auto;
+
+  padding: 60px 40px 100px;
+
+  box-sizing: border-box;
+}
+
+
+/* ==================================================
+   SECTION 1
+   UPLOAD
+================================================== */
+
+.upload-section {
+  width: 100%;
+}
+
+
+.dashboard-label {
+  margin-bottom: 12px;
+
+  color: #e52525;
+
+  font-size: 12px;
+  font-weight: 700;
+
+  letter-spacing: 1.5px;
+}
+
+
+.dashboard-container h1 {
+  margin: 0;
+
+  font-size: 38px;
+  line-height: 1.2;
+
+  letter-spacing: -1.5px;
+
+  color: #111111;
+}
+
+
+.dashboard-description {
+  margin-top: 15px;
+
+  color: #6b7280;
+
+  font-size: 15px;
+  line-height: 1.7;
+}
+
+
+/* ==================================================
+   UPLOAD GRID
+================================================== */
+
+.upload-grid {
+  width: 100%;
+
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+
+  gap: 24px;
+
+  margin-top: 40px;
+}
+
+
+/* ==================================================
+   UPLOAD CARD
+================================================== */
+
+.upload-card {
+  background: #ffffff;
+
+  border: 1px solid #e2e5e9;
+
+  border-radius: 14px;
+
+  padding: 26px;
+
+  box-shadow:
+    0 8px 25px rgba(0, 0, 0, 0.04);
+}
+
+
+.upload-card-title {
+  font-size: 17px;
+  font-weight: 700;
+}
+
+
+.upload-card > p {
+  margin-top: 7px;
+  margin-bottom: 20px;
+
+  color: #777777;
+
+  font-size: 14px;
+}
+
+
+/* ==================================================
+   UPLOAD BOX
+================================================== */
+
+.upload-box {
+  min-height: 230px;
+  width: 100%;
+
+  padding: 20px;
+
+  border: 2px dashed #d5d8dd;
+
+  border-radius: 12px;
+
+  display: flex;
+  flex-direction: column;
+
+  align-items: center;
+  justify-content: center;
+
+  text-align: center;
+
+  color: #555555;
+
+  font-size: 14px;
+
+  cursor: pointer;
+
+  box-sizing: border-box;
+
+  overflow: hidden;
+
+  transition: 0.25s ease;
+}
+
+
+.upload-box:hover {
+  border-color: #e52525;
+  background: #fffafa;
+}
+
+
+/* ==================================================
+   UPLOAD ICON
+================================================== */
+
+.upload-icon {
+  width: 48px;
+  height: 48px;
+
+  margin-bottom: 15px;
+
+  border-radius: 50%;
+
+  background: #f1f2f4;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  font-size: 23px;
+}
+
+
+/* ==================================================
+   UPLOAD PREVIEW
+================================================== */
+
+.upload-preview {
+  width: 100%;
+  height: 230px;
+
+  object-fit: cover;
+
+  border-radius: 8px;
+}
+
+
+.upload-box span {
+  margin-top: 10px;
+
+  color: #9ca3af;
+
+  font-size: 12px;
+}
+
+
+.selected-file {
+  margin-top: 12px;
+
+  color: #6b7280;
+
+  font-size: 12px;
+
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+
+/* ==================================================
+   DETECT BUTTON
+================================================== */
+
+.detect-section {
+  width: 100%;
+
+  margin-top: 30px;
+
+  text-align: center;
+}
+
+
+.detect-btn {
+  min-width: 220px;
+
+  height: 50px;
+
+  padding: 0 28px;
+
+  border: none;
+
+  border-radius: 10px;
+
+  background: #e52525;
+
+  color: #ffffff;
+
+  font-size: 15px;
+
+  font-weight: 600;
+
+  cursor: pointer;
+
+  transition: 0.2s ease;
+}
+
+
+.detect-btn:hover:not(:disabled) {
+  background: #111827;
+
+  transform: translateY(-1px);
+}
+
+
+.detect-btn:disabled {
+  background: #d1d5db;
+
+  cursor: not-allowed;
+}
+
+
+.detect-section p {
+  margin-top: 14px;
+
+  color: #888888;
+
+  font-size: 13px;
+}
+
+
+/* ==================================================
+   SECTION 2
+   IMAGE DETECTION
+================================================== */
+
+.detection-section {
+  width: 100%;
+  margin-top: 90px;
+  padding-top: 55px;
+  border-top: 1px solid #e5e7eb;
+}
+
+
+/* ==================================================
+   DETECTION SECTION HEADING
+================================================== */
+
+.detection-section > h2 {
+  margin: 0 0 28px 0;
+
+  font-size: 28px;
+  line-height: 1.3;
+
+  font-weight: 700;
+
+  color: #111111;
+
+  letter-spacing: -0.8px;
+}
+
+
+/* ==================================================
+   SUMMARY GRID
+================================================== */
+
+.summary-grid {
+  width: 100%;
+
+  display: grid;
+
+  grid-template-columns: repeat(3, 1fr);
+
+  gap: 20px;
+
+  margin-top: 25px;
+}
+
+
+/* ==================================================
+   SUMMARY CARD
+================================================== */
+
+.summary-card {
+  min-height: 115px;
+
+  padding: 25px;
+
+  background: #f8f9fa;
+
+  border: 1px solid #edf0f2;
+
+  border-radius: 15px;
+
+  box-sizing: border-box;
+
+  display: flex;
+
+  flex-direction: column;
+
+  justify-content: center;
+
+  transition: all 0.2s ease;
+}
+
+
+.summary-card:hover {
+  transform: translateY(-2px);
+
+  box-shadow:
+    0 8px 25px rgba(0, 0, 0, 0.04);
+}
+
+
+/* ==================================================
+   SUMMARY CARD LABEL
+================================================== */
+
+.summary-card span {
+  display: block;
+
+  color: #555555;
+
+  font-size: 11px;
+
+  font-weight: 500;
+
+  letter-spacing: 1.2px;
+
+  text-transform: uppercase;
+}
+
+
+/* ==================================================
+   SUMMARY CARD VALUE
+================================================== */
+
+.summary-card strong {
+  display: block;
+
+  margin-top: 12px;
+
+  color: #111111;
+
+  font-size: 34px;
+
+  line-height: 1.2;
+
+  font-weight: 500;
+
+  letter-spacing: 0.5px;
+}
+
+
+/* ==================================================
+   DETECTION STATUS
+================================================== */
+
+.summary-card strong.status-detected,
+.summary-card strong.status-no-change {
+  display: flex;
+
+  align-items: center;
+
+  gap: 10px;
+
+  font-size: 25px;
+
+  font-weight: 600;
+}
+
+
+/* Red dot before Change Detected */
+
+.summary-card strong.status-detected::before {
+  content: "";
+
+  width: 12px;
+
+  height: 12px;
+
+  min-width: 12px;
+
+  border-radius: 50%;
+
+  background: #e52525;
+
+  display: inline-block;
+}
+
+
+/* Green dot if no change */
+
+.summary-card strong.status-no-change::before {
+  content: "";
+
+  width: 12px;
+
+  height: 12px;
+
+  min-width: 12px;
+
+  border-radius: 50%;
+
+  background: #22c55e;
+
+  display: inline-block;
+}
+
+
+/* ==================================================
+   VISUAL CHANGE ANALYSIS
+================================================== */
+
+.visual-analysis {
+  width: 100%;
+
+  margin-top: 55px;
+}
+
+
+/* ==================================================
+   VISUAL ANALYSIS HEADING
+================================================== */
+
+.visual-analysis h3 {
+  margin: 0;
+
+  color: #111111;
+
+  font-size: 25px;
+
+  line-height: 1.3;
+
+  font-weight: 700;
+
+  letter-spacing: -0.5px;
+}
+
+
+/* ==================================================
+   RESULTS GRID
+================================================== */
+
+.results-grid {
+  width: 100%;
+
+  display: grid;
+
+  grid-template-columns: repeat(4, 1fr);
+
+  gap: 20px;
+
+  margin-top: 24px;
+}
+
+
+/* ==================================================
+   RESULT CARD
+================================================== */
+
+.result-card {
+  overflow: hidden;
+
+  background: #ffffff;
+
+  border: 1px solid #e5e7eb;
+
+  border-radius: 14px;
+
+  box-shadow:
+    0 8px 25px rgba(0, 0, 0, 0.04);
+
+  transition:
+    transform 0.2s ease,
+    box-shadow 0.2s ease;
+}
+
+
+.result-card:hover {
+  transform: translateY(-3px);
+
+  box-shadow:
+    0 12px 30px rgba(0, 0, 0, 0.08);
+}
+
+
+/* ==================================================
+   RESULT CARD HEADING
+================================================== */
+
+.result-card h4 {
+  height: 45px;
+
+  margin: 0;
+
+  padding: 0 15px;
+
+  display: flex;
+
+  align-items: center;
+
+  background: #ffffff;
+
+  color: #111111;
+
+  font-size: 13px;
+
+  font-weight: 500;
+}
+
+
+/* ==================================================
+   RESULT IMAGES
+================================================== */
+
+.result-card img {
+  width: 100%;
+
+  height: 290px;
+
+  display: block;
+
+  object-fit: cover;
+
+  background: #eeeeee;
+}
+
+
+/* ==================================================
+   DOWNLOAD SECTION
+================================================== */
+
+.download-section {
+  width: 100%;
+
+  margin-top: 50px;
+}
+
+
+/* ==================================================
+   DOWNLOAD HEADING
+================================================== */
+
+.download-section h3 {
+  margin: 0 0 20px 0;
+
+  color: #111111;
+
+  font-size: 24px;
+
+  line-height: 1.3;
+
+  font-weight: 700;
+
+  letter-spacing: -0.5px;
+}
+
+
+/* ==================================================
+   DOWNLOAD BUTTONS
+================================================== */
+
+.download-buttons {
+  display: flex;
+
+  align-items: center;
+
+  gap: 15px;
+}
+
+
+/* ==================================================
+   DOWNLOAD BUTTON
+================================================== */
+
+.download-buttons button {
+  height: 45px;
+
+  padding: 0 22px;
+
+  border: none;
+
+  border-radius: 9px;
+
+  background: #111827;
+
+  color: #ffffff;
+
+  font-size: 13px;
+
+  font-weight: 600;
+
+  cursor: pointer;
+
+  transition:
+    background 0.2s ease,
+    transform 0.2s ease;
+}
+
+
+.download-buttons button:hover {
+  background: #e52525;
+
+  transform: translateY(-1px);
+}
+
+
+.download-buttons button:active {
+  transform: translateY(0);
+}
+
+
+/* ==================================================
+   RESPONSIVE
+================================================== */
+
+@media (max-width: 1100px) {
+
+  .results-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+}
+
+
+@media (max-width: 900px) {
+
+  .summary-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .summary-card {
+    min-height: 105px;
+  }
+
+}
+
+
+@media (max-width: 800px) {
+
+  .detection-section {
+    margin-top: 70px;
+
+    padding-top: 45px;
+  }
+
+
+  .detection-section > h2 {
+    font-size: 25px;
+  }
+
+
+  .visual-analysis h3 {
+    font-size: 23px;
+  }
+
+
+  .results-grid {
+    grid-template-columns: 1fr;
+  }
+
+
+  .result-card img {
+    height: 300px;
+  }
+
+
+  .download-buttons {
+    flex-direction: column;
+
+    align-items: stretch;
+  }
+
+
+  .download-buttons button {
+    width: 100%;
+  }
+
+}
+
+
+@media (max-width: 500px) {
+
+  .detection-section {
+    margin-top: 55px;
+
+    padding-top: 35px;
+  }
+
+
+  .detection-section > h2 {
+    font-size: 23px;
+  }
+
+
+  .summary-card {
+    padding: 20px;
+  }
+
+
+  .summary-card strong {
+    font-size: 30px;
+  }
+
+
+  .summary-card strong.status-detected,
+  .summary-card strong.status-no-change {
+    font-size: 21px;
+  }
+
+
+  .visual-analysis {
+    margin-top: 40px;
+  }
+
+
+  .visual-analysis h3 {
+    font-size: 21px;
+  }
+
+
+  .result-card img {
+    height: 250px;
+  }
+
+
+  .download-section {
+    margin-top: 40px;
+  }
+
+
+  .download-section h3 {
+    font-size: 21px;
+  }
+
+}
+
+/* ==================================================
+   RESPONSIVE
+================================================== */
+
+@media (max-width: 1000px) {
+
+  .results-grid {
+    grid-template-columns:
+      repeat(2, 1fr);
+  }
+
+  .summary-grid {
+    grid-template-columns:
+      1fr;
+  }
+
+}
+
+
+@media (max-width: 800px) {
+
+  .dashboard-navbar {
+    height: auto;
+
+    padding: 15px 25px;
+
+    gap: 15px;
+  }
+
+
+  .dashboard-user span {
+    display: none;
+  }
+
+
+  .dashboard-container {
+    padding: 45px 22px 70px;
+  }
+
+
+  .upload-grid {
+    grid-template-columns:
+      1fr;
+  }
+
+
+  .results-grid {
+    grid-template-columns:
+      1fr;
+  }
+
+
+  .visual-header {
+    align-items: flex-start;
+
+    flex-direction: column;
+
+    gap: 10px;
+  }
+
+}
+
+
+@media (max-width: 500px) {
+
+  .dashboard-navbar {
+    padding: 14px 18px;
+  }
+
+
+  .dashboard-logo-section .logo-text {
+    font-size: 18px;
+  }
+
+
+  .dashboard-container {
+    padding: 35px 16px 50px;
+  }
+
+
+  .dashboard-container h1 {
+    font-size: 29px;
+  }
+
+
+  .upload-card {
+    padding: 20px;
+  }
+
+
+  .download-buttons {
+    flex-direction: column;
+  }
+
+
+  .download-btn {
+    width: 100%;
+  }
+
+
+  .detection-status {
+    font-size: 20px;
+  }
+
+}
