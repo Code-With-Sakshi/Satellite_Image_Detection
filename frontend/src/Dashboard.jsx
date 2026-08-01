@@ -230,13 +230,13 @@ function Dashboard() {
       // =================================================
 
       const response =
-        await fetch(
-          "http://localhost:5000/detect",
-          {
-            method: "POST",
-            body: formData
-          }
-        );
+       await fetch(
+  "https://satellite-image-detection.onrender.com/detect",
+  {
+    method: "POST",
+    body: formData
+  }
+);
 
 
       // =================================================
@@ -336,17 +336,14 @@ function Dashboard() {
   // IMAGE URL
   // =====================================================
 
-  const getImageUrl = (url) => {
+ const getImageUrl = (url) => {
 
-    if (!url) {
+  if (!url) {
+    return "";
+  }
 
-      return "";
-
-    }
-
-    return `http://localhost:5000${url}`;
-
-  };
+  return `https://satellite-image-detection.onrender.com${url}`;
+};
 
 
   // =====================================================
