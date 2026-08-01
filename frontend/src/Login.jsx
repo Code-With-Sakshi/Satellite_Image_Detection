@@ -20,15 +20,15 @@ const handleLogin = async (e) => {
   try {
 
     // Send login request to Flask
-    const response = await fetch(
-      "http://localhost:5000/login",
-      {
-        method: "POST",
+  const response = await fetch(
+  "https://satellite-image-detection.onrender.com/login",
+  {
+    method: "POST",
 
-        headers: {
-          "Content-Type": "application/json"
-        },
-
+    headers: {
+      "Content-Type": "application/json"
+    },
+    
         body: JSON.stringify({
           email: email,
           password: password
