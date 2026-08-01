@@ -22,14 +22,13 @@ const handleSignup = async (e) => {
 
   try {
 
-    const response = await fetch(
-      "http://localhost:5000/signup",
-      {
-        method: "POST",
-
-        headers: {
-          "Content-Type": "application/json"
-        },
+const response = await fetch(
+  "https://satellite-image-detection.onrender.com/signup",
+  {
+    method: "POST",
+    headers: {
+      "Content-Type": "application/json"
+    },
 
         body: JSON.stringify({
           full_name: fullName,
