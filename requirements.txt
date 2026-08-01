@@ -1,0 +1,9 @@
+Flask
+flask-cors
+numpy
+tensorflow
+Pillow
+mysql-connector-python
+python-dotenv
+gunicorn
+opencv-python-headless
