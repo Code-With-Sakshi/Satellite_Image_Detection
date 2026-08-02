@@ -231,7 +231,7 @@ function Dashboard() {
 
       const response =
        await fetch(
-  "https://satellite-image-detection.onrender.com/detect",
+ "https://satelliteimagedetection-production.up.railway.app/detect",
   {
     method: "POST",
     body: formData
