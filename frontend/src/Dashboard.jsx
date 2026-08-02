@@ -229,15 +229,16 @@ function Dashboard() {
       // SEND REQUEST TO FLASK
       // =================================================
 
-      const response =
-       await fetch(
- "https://satelliteimagedetection-production.up.railway.app/detect",
+  const response = await fetch(
+  "https://satelliteimagedetection-production.up.railway.app/detect",
   {
     method: "POST",
     body: formData
   }
 );
 
+
+const data = await response.json();
 
       // =================================================
       // GET BACKEND RESPONSE
