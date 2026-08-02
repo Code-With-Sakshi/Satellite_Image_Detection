@@ -334,13 +334,13 @@ function Dashboard() {
   // IMAGE URL
   // =====================================================
 
- const getImageUrl = (url) => {
+const getImageUrl = (url) => {
 
   if (!url) {
     return "";
   }
 
-  return `https://satellite-image-detection.onrender.com${url}`;
+  return `https://satelliteimagedetection-production.up.railway.app${url}`;
 };
 
 
