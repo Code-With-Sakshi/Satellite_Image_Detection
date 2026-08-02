@@ -20,8 +20,8 @@ const handleLogin = async (e) => {
   try {
 
     // Send login request to Flask
-  const response = await fetch(
-  "https://satellite-image-detection.onrender.com/login",
+const response = await fetch(
+  "https://satelliteimagedetection-production.up.railway.app/login",
   {
     method: "POST",
 
