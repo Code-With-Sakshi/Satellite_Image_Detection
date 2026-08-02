@@ -237,9 +237,6 @@ function Dashboard() {
   }
 );
 
-
-const data = await response.json();
-
       // =================================================
       // GET BACKEND RESPONSE
       // =================================================
