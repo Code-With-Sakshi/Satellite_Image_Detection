@@ -90,25 +90,46 @@ Database:
 
 # 🏗️ System Architecture
 
-                     User
-                       |
-                       |
-            React Frontend (Vercel)
-                       |
-                       |
-                  REST API
-                       |
-                       |
-            Flask Backend (Railway)
-                       |
-      ---------------------------------
-      |                               |
 
-TensorFlow U-Net Model MySQL Database
-Satellite Change Detection User & Detection Data
-
-
----
+```text
+                         User
+                           |
+                           |
+              React Frontend Application
+                      (Vercel)
+                           |
+                           |
+                    REST API Request
+                           |
+                           |
+              Flask Backend Application
+                      (Railway)
+                           |
+              ---------------------------
+              |                         |
+              |                         |
+      TensorFlow U-Net Model       MySQL Database
+   Satellite Change Detection    User & Detection Data
+              |
+              |
+      Before + After Images
+              |
+              |
+       Image Preprocessing
+     (Resize + Normalize)
+              |
+              |
+       U-Net Model Prediction
+              |
+              |
+      Binary Change Mask
+              |
+              |
+    Change Overlay Visualization
+              |
+              |
+       Detection Results
+```
 
 # 🧠 Deep Learning Model
 
