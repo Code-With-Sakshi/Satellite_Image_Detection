@@ -306,33 +306,6 @@ Ground Truth Change Mask
 - Vercel
 
 
----
-
-# 📂 Project Structure
-
-
-Satellite_Image_Detection/
-
-│
-├── backend/
-│ │
-│ ├── app.py
-│ ├── best_model.keras
-│ ├── requirements.txt
-│
-│
-├── frontend/
-│ │
-│ ├── src/
-│ ├── package.json
-│ ├── vite.config.js
-│
-│
-└── README.md
-
-
----
-
 # ⚙️ Installation and Setup
 
 ## Clone Repository
