@@ -23,7 +23,7 @@ const handleSignup = async (e) => {
   try {
 
 const response = await fetch(
-  "https://satelliteimagedetection-production.up.railway.app/signup",
+  "https://satelliteimagedetection-production.up.railway.app/login",
   {
     method: "POST",
     headers: {
