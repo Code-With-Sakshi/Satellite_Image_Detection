@@ -69,6 +69,13 @@ def get_db_connection():
 
     try:
 
+        print("========== DATABASE CONFIG ==========")
+        print("DB_HOST:", DB_CONFIG["host"])
+        print("DB_PORT:", DB_CONFIG["port"])
+        print("DB_USER:", DB_CONFIG["user"])
+        print("DB_NAME:", DB_CONFIG["database"])
+        print("=====================================")
+
         connection = mysql.connector.connect(
             host=DB_CONFIG["host"],
             port=DB_CONFIG["port"],
@@ -77,14 +84,13 @@ def get_db_connection():
             database=DB_CONFIG["database"]
         )
 
+        print("✅ Database Connected Successfully!")
+
         return connection
 
     except Error as e:
 
-        print(
-            "MySQL Connection Error:",
-            e
-        )
+        print("❌ MySQL Connection Error:", e)
 
         return None
 
